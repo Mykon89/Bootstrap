@@ -8,10 +8,11 @@ body {
 }
 
 header {
-  background-image: url(img/castelo.jpg);
+  background-image: url(../img/castelo.jpg);
   background-size: cover;
   background-position: top center;
   height: 100%;
+  position: relative;
 }
 
 header h1 {
@@ -21,10 +22,14 @@ header h1 {
 
 .topCasaFina-banner {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   width: 80%;
   border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .titulo-depoimentos {
