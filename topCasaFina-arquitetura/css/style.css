@@ -12,7 +12,6 @@ header {
   background-size: cover;
   background-position: top center;
   height: 100%;
-  position: relative;
 }
 
 header h1 {
@@ -22,14 +21,15 @@ header h1 {
 
 .topCasaFina-banner {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 80%;
   border-radius: 8px;
-  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 40%;
+  position: absolute;
+  transform: translate(-40%, -40%);
+  transition: 0.3s;
 }
 
 .titulo-depoimentos {
@@ -65,4 +65,23 @@ footer {
 
 footer address:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #paineis-sobre {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .topCasaFina-banner {
+    left: 0;
+    transform: translate(0, -80%);
+    width: 50%;
+  }
+
+  .topCasaFina-bannerWrapper {
+    position: relative;
+    height: 100%;
+  }
 }
